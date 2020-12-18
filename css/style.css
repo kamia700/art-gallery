@@ -629,7 +629,7 @@ img.mfp-img {
       margin-left: 0; }
     .about__block h2 {
       font-size: 5vh;
-      margin-bottom: 1vh; }
+      margin-bottom: 0.5%; }
       .about__block h2::before {
         content: none; }
       .about__block h2::after {
@@ -1241,7 +1241,8 @@ img.mfp-img {
   overflow: hidden;
   height: auto;
   min-width: 0;
-  padding: 0; }
+  padding: 0;
+  outline: none; }
 
 @media (max-width: 1023px) {
   .intro {

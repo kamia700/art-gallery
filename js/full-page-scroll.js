@@ -47,7 +47,7 @@
   };
 
   var _init = function init() {
-    var style = "body{overflow: hidden}.one-page-scroll--page{width: 100%;height: 100%;overflow: hidden;touch-action: none;position: absolute}";
+    var style = "body{overflow: hidden}.one-page-scroll--page{width: 100vw;height: 100vh;overflow: hidden;touch-action: none;position: absolute}";
     var css = new Blob([style], {
       type: 'text/css'
     });

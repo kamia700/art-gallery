@@ -19,4 +19,31 @@
       body.classList.add('lock');
     }
   });
+
+  var sections = document.querySelectorAll('.page-section--main');
+  var mainNav = document.querySelector('.page-header__block');
+  var links = document.querySelectorAll('.main-nav__link');
+
+  var removeActiveClass = function () {
+    links.forEach(function (el) {
+      if (el.classList.contains('active')) {
+        el.classList.remove('active');
+      }
+    });
+  };
+  var checkScrollDistance = function () {
+    var scrollDistance = window.pageYOffset;
+
+    sections.forEach(function (el, i) {
+      var top = el.offsetTop - mainNav.clientHeight;
+      var bottom = el.clientHeight + top;
+      if (top < scrollDistance && scrollDistance < bottom) {
+        removeActiveClass();
+        document.querySelectorAll('.main-nav li')[i].querySelector('a').classList.add('active');
+      }
+    });
+    document.removeEventListener('scroll', checkScrollDistance);
+  };
+
+  window.addEventListener('scroll', checkScrollDistance);
 }());

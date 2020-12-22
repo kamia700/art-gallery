@@ -43,24 +43,24 @@
             <a class="main-nav__link" href="#about">About me</a>
           </li>
           <li>
-            <a class="main-nav__link" href="catalog.html">Gallery</a>
+            <a class="main-nav__link" href="#contact">Contact</a>
           </li>
           <li>
-            <a class="main-nav__link" href="#contact">Contact</a>
+            <a class="main-nav__link" href="catalog.html">Gallery</a>
           </li>
         </ul>
       </nav>
     </section>
   </header>
 
-  <main id="main" class="scroll-container">
+  <main class="main">
     <h1 class="visually-hidden">Main page of Art-gallery</h1>
 
-    <section class="page-section page-section--main home" name="home">
+    <section class="page-section page-section--main home" id="home">
       <h2 class="visually-hidden">Introduction block</h2>
       <div class="intro container">
+        <h2>WELLCOME<br>TO MARIA`S ART <br>GALLERY</h2>
         <div class="intro__welcome">
-          <h2>WELLCOME<br>TO MARIA`S ART GALLERY</h2>
           <picture>
             <source type="image/webp" srcset="img/photo_maria@1x.webp 1x, img/photo_maria@2x.webp 2x">
             <img src="img/photo_maria@1x.jpg" srcset="img/photo_maria@2x.jpg 2x" width="380" height="400" alt="Maria and her painting">
@@ -105,41 +105,30 @@
           </div>
         </div>
         </div>
-      <div class="scroll__btn">
-        <a href="#about">
-          <img src="img/down-arrow.svg" alt="Scroll down arrow" width="19" height="19">
-        </a>
-      </div>
     </section>
 
-    <section class="page-section page-section--main about" name="about">
+    <section class="page-section page-section--main about" id="about">
       <h2 class="visually-hidden">Information about the artist</h2>
       <div class="about__block container">
         <h2>About me</h2>
-          <figure class="about__photo">
-            <div class="about__img">
-              <picture>
-                <source type="image/webp" srcset="img/photo@1x.webp 1x, img/photo@2x.webp 2x">
-                <img src="img/photo@1x.jpg" srcset="img/photo@2x.jpg 2x" width="725" height="225" alt="photo of Maria in the gallery">
-              </picture>
-            </div>
-            <figcaption>Maria Vamvakidi</figcaption>
-          </figure>
-          <p class="about__text">Everything has its own story. I was born on Crete in the city of Heraklion, where I live and work today.
-            At a young age I attended freehand drawing courses. Later I graduated in Graphic Arts from the <strong>Akto Art and Design</strong> school.
-            Soon after, I attended classes of religious painting and painting workshops. I took part in team exhibitions and now I display my paintings in my own workplace, many of my paintings are in private collections.
-          </p>
+        <figure class="about__photo">
+          <div class="about__img">
+            <picture>
+              <source type="image/webp" srcset="img/photo@1x.webp 1x, img/photo@2x.webp 2x">
+              <img src="img/photo@1x.jpg" srcset="img/photo@2x.jpg 2x" width="725" height="225" alt="photo of Maria in the gallery">
+            </picture>
+          </div>
+          <figcaption>Maria Vamvakidi</figcaption>
+        </figure>
+        <p class="about__text">Everything has its own story. I was born on Crete in the city of Heraklion, where I live and work today.
+          At a young age I attended freehand drawing courses. Later I graduated in Graphic Arts from the <strong>Akto Art and Design</strong> school.
+          Soon after, I attended classes of religious painting and painting workshops. I took part in team exhibitions and now I display my paintings in my own workplace, many of my paintings are in private collections.
+        </p>
         <p class="about__gr">Γεννήθηκα στο Ηράκλειο Κρήτης όπου ζω και εργάζομαι μέχρι σήμερα. Σε νεαρή ηλικία παρακολούθησα μαθήματα ελεύθερου σχεδίου. Αποφοίτησα από την σχολή Acto Art and Design γραφικές τέχνες και έπειτα παρακολούθησα μαθήματα σε εργαστήρια αγιογραφίας και ζωγραφικής. Έχω πάρει μέρος σε ομαδικές εκθέσεις, καθώς επίσης εκθέτω την δουλειά μου σε ιδιόκτητο χώρο.  Έργα μου υπάρχουν σε ιδιωτικές συλλογές.</p>
-      </div>
-
-      <div class="scroll__btn">
-        <a href="#contact">
-          <img src="img/down-arrow.svg" alt="Scroll down arrow" width="19" height="19">
-        </a>
       </div>
     </section>
 
-    <section class="page-section page-section--main contact" name="contact">
+    <section class="page-section page-section--main contact" id="contact">
       <h2>Contacts</h2>
       <div class="contact__block container">
         <div class="contact__wrapper">
@@ -154,7 +143,7 @@
 
                 <div class="contact__email">
                   <label for="user-email">Email</label>
-                  <input id="user-email" type="email" name="email" placeholder="*Please, enter your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required="">
+                  <input id="user-email" type="email" name="email" placeholder="*Please, enter your email address" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required="">
                 </div>
               </div>
 
@@ -167,6 +156,7 @@
           </form>
         </div>
         <div class="contact__map">
+          <h3>How to find us</h3>
           <div class="contact__map-block">
             <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1625.9423776080337!2d25.016207661575528!3d35.408107017623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a519bd2b55d5d%3A0x5bc3d4e1a26264a0!2sAmazona%20Restaurant%20Bar%20%26%20ART%20GALLERY!5e0!3m2!1sen!2sse!4v1607016518349!5m2!1sen!2sse" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <picture>
@@ -181,8 +171,7 @@
         <section class="footer__info container">
           <h2 class="visually-hidden">Address of the gallery and social links</h2>
           <div class="footer__address">
-            <p class="footer__text">How to find us</p>
-            <p>Address: El. Venizelou, Ag. Pelagia 715 00, Greece</p>
+            <p>Address: El. Venizelou, Ag. Pelagia 715 00,<br>Crete, Greece</p>
           </div>
 
           <ul class="footer__social">
@@ -204,9 +193,9 @@
         </section>
       </footer>
     </section>
+
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/full-page-scroll.js" async=""></script>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

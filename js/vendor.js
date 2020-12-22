@@ -2388,5 +2388,7 @@ for (var i = 0; i < links.length; i++) {
       var x = current.classList.remove('active');
       this.className += " active";
     }
+
+    history.pushState('', document.title, window.location.pathname);
   });
 }
